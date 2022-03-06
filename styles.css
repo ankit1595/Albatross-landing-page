@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+:root{
+    --primary-color:#fb923c;
+}
 
 html,body{
     box-sizing: border-box;
@@ -15,10 +18,14 @@ header{
     background-color: white;
 }
 
-img{
-    weight: 20px;
-    height: auto;
+.btn-primary{
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    color: white;
 }
+
 
 a{
     text-decoration: none;
@@ -26,8 +33,9 @@ a{
 }
 
 a:hover{
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid var(--primary-color);
 }
+
 
 .flex{
     display: flex;
@@ -57,47 +65,49 @@ a:hover{
     background-image: url(./images/gale-book.jpg);
     width:100%;
     height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .hero{
     width: 100%;
-    height: 200px;
-    display: block;
+    height: 400px;
 }
 
 .move-right{
     justify-content: right;
 }
 
+.align-center{
+    align-items: center;
+}
+
 .container{
     width:90%;
-    padding: 0;
+    padding: 50px;
     margin: 0;
     display: flex;
     flex-direction: row;
-  
-
+    justify-content: center;
+    gap: 100px;
 }
 .box{
     width: 250px;
     margin:0 10px;
     box-shadow:0 0 20px 2px rgba(red, green, blue, alpha);
     transition: 1s;
-    display:table;
 }
+
 .box img{
     display: block;
-    width: 50%;
+    width: 100%;
     border-radius: 5px;
 }
 .box:hover{
     transform:scale(1.3);
     z-index:2;    
 }
-.imgflex{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
 
+.background-white{
+    background-color: white;
 }
-
