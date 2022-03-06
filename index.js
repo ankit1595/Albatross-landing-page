@@ -13,6 +13,7 @@ var ficSection = document.getElementById("fiction");
 nonFiction.addEventListener('click',()=>{
     ficNonSection.style.display="block";
     ficSection.style.display="none";
+    ficNonSection.style.transform="scale(1.3)"
 })
 
 var fiction=document.getElementById("fic");
@@ -20,6 +21,7 @@ console.log(fiction);
 fiction.addEventListener('click',()=>{
     ficSection.style.display="block";
     ficNonSection.style.display="none";
+    ficSection.style.transform="scale(1.3)"
 })
 
 // var body1=document.getElementsByTagName('section')
