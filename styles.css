@@ -1,0 +1,7 @@
+.flex{
+    display: flex;
+}
+
+.non-bullet{
+    list-style: none;
+}
