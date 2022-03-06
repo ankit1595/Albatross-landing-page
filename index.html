@@ -19,10 +19,10 @@
             </div>
             <ul class="flex flex-2 move-right non-bullet gap">
                 <li>
-                    <a href="./">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="./">Catalogue</a>
+                    <a href="#catalogue">Catalogue</a>
                 </li>
                 <li>
                     <a class="btn-primary" href="./">Join Us</a>
@@ -46,15 +46,20 @@
 
 
     <!-- || KALYANI - Some random information -->
-    <section class="background-color">
+    <section class="background-color" id="catalogue">
 
         <div class="container">
-            <div class="box">
-                <img src="./images/Fiction.jpg">
-            </div>
-            <div class="box">
-                <img src="./images/Non-fuction.jpg">
-            </div>
+            <a href="#fiction" id="fic">
+                <div class="box">
+                    <img src="./images/Fiction.jpg">
+                </div>
+            </a>
+
+            <a href="#non-fiction" id="non-fic">
+                <div class="box">
+                    <img src="./images/Non-fuction.jpg">
+                </div>
+            </a>
         </div>
 
     </section>
@@ -86,7 +91,8 @@
             </div>
         </div>
     </section>
-    <section id="nonFiction ">
+
+    <section id="non-fiction">
         <div class="genre background-color">
             <p class="genreName">Non-fiction</p>
             <div class="drama">
@@ -110,22 +116,26 @@
                 </div>
             </div>
         </div>
-        <!-- ||Quote Section -->
     </section>
-    <dl>
-        <dt>
-            <em>"The more that you read, the more things you will know."</em> <br>
-            <em>"The more that you learn, the more places you'll go."</em>
-        </dt>
-        <dd>-Dr. Seuss </dd>
-        <dd><small>Also We, The Albatross</small> </dd>
-    </dl>
-
-    <section>
-
+    <!-- ||Quote Section -->
+    <section class="flex flex-center background-squote">
+        <div >
+            <img src="./images/book-the-loyal-friend.png" alt="book-quote" width="400px" height="auto">
+        </div>
+        <div class="flex-center" style="font-size: larger">
+            <dl>
+                <dt>
+                    <em>"The more that you read, the more things you will know.</em> <br>
+                    <em>   The more that you learn, the more places you'll go."</em>
+                </dt>
+                <dd>-Dr. Seuss <small>(Also We, The Albatross)</small></dd>
+            </dl>
+        </div>
     </section>
+
     <section></section>
     <footer></footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>
